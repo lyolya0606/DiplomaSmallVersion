@@ -1,0 +1,107 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="freony-390x240.png" />
+    <None Remove="reactors.jpeg" />
+    <None Remove="schemes\10_scheme_freon134a.png" />
+    <None Remove="schemes\11_scheme_freon134a.png" />
+    <None Remove="schemes\1_scheme_freon125.png" />
+    <None Remove="schemes\1_scheme_freon134a.png" />
+    <None Remove="schemes\1_scheme_freon227ea.png" />
+    <None Remove="schemes\1_scheme_freon23.png" />
+    <None Remove="schemes\2_scheme_freon125.png" />
+    <None Remove="schemes\2_scheme_freon134a.png" />
+    <None Remove="schemes\2_scheme_freon227ea.png" />
+    <None Remove="schemes\2_scheme_freon23.png" />
+    <None Remove="schemes\3_scheme_freon125.png" />
+    <None Remove="schemes\3_scheme_freon134a.png" />
+    <None Remove="schemes\3_scheme_freon227ea.png" />
+    <None Remove="schemes\3_scheme_freon23.png" />
+    <None Remove="schemes\4_scheme_freon125.png" />
+    <None Remove="schemes\4_scheme_freon134a.png" />
+    <None Remove="schemes\4_scheme_freon227ea.png" />
+    <None Remove="schemes\4_scheme_freon23.png" />
+    <None Remove="schemes\5_scheme_freon125.png" />
+    <None Remove="schemes\5_scheme_freon134a.png" />
+    <None Remove="schemes\5_scheme_freon227ea.png" />
+    <None Remove="schemes\5_scheme_freon23.png" />
+    <None Remove="schemes\6_scheme_freon125.png" />
+    <None Remove="schemes\6_scheme_freon134a.png" />
+    <None Remove="schemes\6_scheme_freon227ea.png" />
+    <None Remove="schemes\6_scheme_freon23.png" />
+    <None Remove="schemes\7_scheme_freon134a.png" />
+    <None Remove="schemes\7_scheme_freon227ea.png" />
+    <None Remove="schemes\7_scheme_freon23.png" />
+    <None Remove="schemes\8_scheme_freon134a.png" />
+    <None Remove="schemes\9_scheme_freon134a.png" />
+    <None Remove="schemes\scheme_freon125.png" />
+    <None Remove="schemes\scheme_freon134a.png" />
+    <None Remove="schemes\scheme_freon227ea.png" />
+    <None Remove="schemes\scheme_freon23.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="reactors.jpeg" />
+    <Resource Include="schemes\6_scheme_freon23.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="JsonConverter.Newtonsoft.Json" Version="0.5.0" />
+    <PackageReference Include="LiveCharts" Version="0.9.7" />
+    <PackageReference Include="LiveCharts.Wpf" Version="0.9.7" />
+    <PackageReference Include="Microsoft.Data.Sqlite" Version="8.0.3" />
+    <PackageReference Include="Python.Runtime" Version="2.7.9" />
+    <PackageReference Include="pythonnet" Version="3.0.3" />
+    <PackageReference Include="SQLite" Version="3.13.0" />
+    <PackageReference Include="System.Data.SQLite" Version="1.0.118" />
+    <PackageReference Include="System.Data.SQLite.Core" Version="1.0.118" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="freony-390x240.png" />
+    <Resource Include="schemes\10_scheme_freon134a.png" />
+    <Resource Include="schemes\11_scheme_freon134a.png" />
+    <Resource Include="schemes\1_scheme_freon125.png" />
+    <Resource Include="schemes\1_scheme_freon134a.png" />
+    <Resource Include="schemes\1_scheme_freon227ea.png" />
+    <Resource Include="schemes\1_scheme_freon23.png" />
+    <Resource Include="schemes\2_scheme_freon125.png" />
+    <Resource Include="schemes\2_scheme_freon134a.png" />
+    <Resource Include="schemes\2_scheme_freon227ea.png" />
+    <Resource Include="schemes\2_scheme_freon23.png" />
+    <Resource Include="schemes\3_scheme_freon125.png" />
+    <Resource Include="schemes\3_scheme_freon134a.png" />
+    <Resource Include="schemes\3_scheme_freon227ea.png" />
+    <Resource Include="schemes\3_scheme_freon23.png" />
+    <Resource Include="schemes\4_scheme_freon125.png" />
+    <Resource Include="schemes\4_scheme_freon134a.png" />
+    <Resource Include="schemes\4_scheme_freon227ea.png" />
+    <Resource Include="schemes\4_scheme_freon23.png" />
+    <Resource Include="schemes\5_scheme_freon125.png" />
+    <Resource Include="schemes\5_scheme_freon134a.png" />
+    <Resource Include="schemes\5_scheme_freon227ea.png" />
+    <Resource Include="schemes\5_scheme_freon23.png" />
+    <Resource Include="schemes\6_scheme_freon125.png" />
+    <Resource Include="schemes\6_scheme_freon134a.png" />
+    <Resource Include="schemes\6_scheme_freon227ea.png" />
+    <Resource Include="schemes\7_scheme_freon134a.png" />
+    <Resource Include="schemes\7_scheme_freon227ea.png" />
+    <Resource Include="schemes\7_scheme_freon23.png" />
+    <Resource Include="schemes\8_scheme_freon134a.png" />
+    <Resource Include="schemes\9_scheme_freon134a.png" />
+    <Resource Include="schemes\scheme_freon125.png" />
+    <Resource Include="schemes\scheme_freon134a.png" />
+    <Resource Include="schemes\scheme_freon227ea.png" />
+    <Resource Include="schemes\scheme_freon23.png" />
+  </ItemGroup>
+
+</Project>

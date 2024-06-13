@@ -18,6 +18,7 @@ using LiveCharts.Wpf;
 using static Python.Runtime.TypeSpec;
 using System.IO;
 using System.Globalization;
+using System.ComponentModel;
 
 
 namespace Diploma {
@@ -563,9 +564,10 @@ namespace Diploma {
             //_kineticComponents = kinetic.GetComponents();
 
 
-            concDataGrid.ItemsSource = null;
-            concDataGrid.Columns.Clear();
+            //concDataGrid.ItemsSource = null;
+            //concDataGrid.Columns.Clear();
 
+            var startConcentrations = GetStartConcentration();
 
             _aValues = showKineticsWindow.GetAValue();
             _eValues = showKineticsWindow.GetEValue();
@@ -583,15 +585,28 @@ namespace Diploma {
             concDataGrid.Columns.Clear();
 
             SetUpColumns();
-            List<DataForTable> data = new();
-            foreach (var component in _kineticComponents) {
-                if (data.Count == _mainProductIndex) {
-                    data.Add(new DataForTable { Element = component, Concentration = 0 });
+            //List<DataForTable> data = new();
+            //foreach (var component in _kineticComponents) {
+            //    if (data.Count == _mainProductIndex) {
+            //        data.Add(new DataForTable { Element = component, Concentration = 0 });
+            //    } else {
+            //        data.Add(new DataForTable { Element = component, Concentration = 0.01 });
+            //    }
+            //}
+            //concDataGrid.ItemsSource = data;
+            int count = _kineticComponents.Count;
+            List <DataForTable> data = new();
+
+            for (int i = 0; i < count; i++) {
+                if (i >= startConcentrations.Count) {
+                    data.Add(new DataForTable { Element = _kineticComponents[i], Concentration = 0 });
                 } else {
-                    data.Add(new DataForTable { Element = component, Concentration = 0.01 });
+                    data.Add(new DataForTable { Element = _kineticComponents[i], Concentration = startConcentrations[i] });
                 }
             }
             concDataGrid.ItemsSource = data;
+
+
 
         }
 

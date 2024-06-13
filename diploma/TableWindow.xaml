@@ -10,6 +10,6 @@
         ResizeMode="NoResize"
         WindowStartupLocation="CenterScreen" Icon="/freony-390x240.png">
     <Grid Margin="10, 10, 10, 10">
-        <DataGrid x:Name="valuesDataGrid" IsReadOnly="True" CanUserAddRows="False" CanUserDeleteRows="False" d:ItemsSource="{d:SampleData ItemCount=5}" AutoGenerateColumns="False" VerticalScrollBarVisibility="Visible" Background="White" FontSize="8" HorizontalScrollBarVisibility="Visible" ScrollViewer.CanContentScroll="False"/>
+        <DataGrid x:Name="valuesDataGrid" IsReadOnly="True" CanUserAddRows="False" CanUserDeleteRows="False" d:ItemsSource="{d:SampleData ItemCount=5}" AutoGenerateColumns="False" VerticalScrollBarVisibility="Visible" Background="White" FontSize="9" HorizontalScrollBarVisibility="Visible" ScrollViewer.CanContentScroll="False"/>
     </Grid>
 </Window>

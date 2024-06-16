@@ -301,7 +301,7 @@ namespace Diploma {
 
   
                 for (int row = 0; row < _concentrations.Count; row++) {
-                    transposedRow.Add(string.Format("{0:00.##E+00}", _concentrations[row][col]));
+                    transposedRow.Add(string.Format("{0:0000.##E+00}", _concentrations[row][col]));
                 }
 
 

@@ -6,15 +6,15 @@
         xmlns:local="clr-namespace:Diploma"
         mc:Ignorable="d"
         FontFamily="{StaticResource Inter}"
-        Title="Выбор веществ" Height="250" Width="160"
+        Title="Выбор веществ" Height="350" Width="200"
         ResizeMode="NoResize"
         WindowStartupLocation="CenterScreen" WindowStyle="None"
-        AllowsTransparency="False" Icon="/freony-390x240.png" FontSize="9">
+        AllowsTransparency="False" Icon="/freony-390x240.png" FontSize="12">
     <Grid x:Name="layoutGrid" >
 
         <Grid.RowDefinitions>
             <RowDefinition Height="0"/>
-            <RowDefinition Height="250"/>
+            <RowDefinition Height="350"/>
         </Grid.RowDefinitions>
 
         <Grid Background="#FFBABABA" Grid.Row="0" Margin="0"/>
@@ -24,8 +24,8 @@
                 <RowDefinition Height="Auto" />
                 <RowDefinition Height="Auto" />
             </Grid.RowDefinitions>
-            <ScrollViewer VerticalScrollBarVisibility="Auto" Height="200">
-                <GroupBox x:Name="elementsGroupBox" Header="Выбрать вещество" FontWeight="Bold" FontSize="9" >
+            <ScrollViewer VerticalScrollBarVisibility="Auto" Height="300">
+                <GroupBox x:Name="elementsGroupBox" Header="Выбрать вещество" FontWeight="Bold" FontSize="13" >
 
                     <StackPanel Margin="0, 10, 0, 0">
                         <!-- Здесь будут ваши элементы -->
@@ -34,8 +34,8 @@
                 </GroupBox>
             </ScrollViewer>
             <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10,0,10">
-                <Button x:Name="allButton" Background="White" FontSize="9" FontWeight="Bold" Width="70" Content="Выбрать все" Click="allButton_Click" Height="20" Margin="5, 0, 0, 0"/>
-                <Button x:Name="OKButton" Background="White" FontSize="9" FontWeight="Bold" Content="Применить" Click="OKButton_Click" Margin="10, 0, 5, 0" Height="20"/>
+                <Button x:Name="allButton" Background="White" FontSize="12" FontWeight="Bold" Width="90" Content="Выбрать все" Click="allButton_Click" Height="20" Margin="5, 0, 0, 0"/>
+                <Button x:Name="OKButton" Background="White" FontSize="12" FontWeight="Bold" Content="Применить" Click="OKButton_Click" Margin="10, 0, 5, 0" Height="20"/>
             </StackPanel>
         </Grid>
     </Grid>

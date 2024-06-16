@@ -5,33 +5,33 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Diploma"
         mc:Ignorable="d"
-        Title="Редактирование записи" Height="250" Width="380"
+        Title="Редактирование записи" Height="250" Width="480"
         FontFamily="{StaticResource Inter}"
         ResizeMode="NoResize"
         WindowStartupLocation="CenterScreen" Icon="/freony-390x240.png">
     <StackPanel Margin="0, 5, 0, 0">
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0, 0, 10, 0">
-            <Label x:Name="first_Label" FontWeight="Bold" FontSize="8" Width="130" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" />
-            <TextBox x:Name="first_TextBox" Margin="0, 0, 0, 0" Width="182" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="8"/>
+            <Label x:Name="first_Label" FontWeight="Bold" FontSize="12" Width="200" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" />
+            <TextBox x:Name="first_TextBox" Margin="0, 0, 0, 0" Width="202" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="12"/>
         </StackPanel>
 
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0, 10, 10, 0">
-            <Label x:Name="second_Label" FontWeight="Bold" FontSize="8" Width="130" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" />
-            <TextBox x:Name="second_TextBox" Margin="0, 0, 0, 0" Width="182" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="8"/>
+            <Label x:Name="second_Label" FontWeight="Bold" FontSize="12" Width="200" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" />
+            <TextBox x:Name="second_TextBox" Margin="0, 0, 0, 0" Width="202" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="12"/>
         </StackPanel>
 
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0, 10, 10, 0">
-            <Label x:Name="third_Label" FontWeight="Bold" FontSize="8" Width="130" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" />
-            <TextBox x:Name="third_TextBox" Margin="0, 0, 0, 0" Width="182" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="8"/>
+            <Label x:Name="third_Label" FontWeight="Bold" FontSize="12" Width="200" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" />
+            <TextBox x:Name="third_TextBox" Margin="0, 0, 0, 0" Width="202" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="12"/>
         </StackPanel>
 
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0, 10, 10, 0">
-            <Label x:Name="fourth_Label" FontWeight="Bold" FontSize="8" Width="130" HorizontalContentAlignment="Right" />
-            <TextBox x:Name="fourth_TextBox" Margin="0, 0, 0, 0" AcceptsReturn="True" TextWrapping="Wrap" Width="182" FontSize="8" Height="57"/>
+            <Label x:Name="fourth_Label" FontWeight="Bold" FontSize="12" Width="200" HorizontalContentAlignment="Right" />
+            <TextBox x:Name="fourth_TextBox" Margin="0, 0, 0, 0" AcceptsReturn="True" TextWrapping="Wrap" Width="202" FontSize="12" Height="57"/>
         </StackPanel>
 
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Width="115" Margin="0, 10, 20, 0">
-            <Button x:Name="OK_Button" Height="16" Width="72" Content="Применить" Background="White" VerticalAlignment="Center" FontSize="8" FontWeight="Bold" Click="OK_Button_Click" />
+            <Button x:Name="OK_Button" Height="18" Width="75" Content="Применить" Background="White" VerticalAlignment="Center" FontSize="12" FontWeight="Bold" Click="OK_Button_Click" />
         </StackPanel>
     </StackPanel>
 </Window>

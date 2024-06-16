@@ -6,13 +6,13 @@
         xmlns:local="clr-namespace:Diploma"
         mc:Ignorable="d"
         FontFamily="{StaticResource Inter}"
-        Title="Характеристики реакторов" Height="230" Width="250"
+        Title="Характеристики реакторов" Height="320" Width="375"
         ResizeMode="NoResize"
         WindowStartupLocation="CenterScreen" Icon="/freony-390x240.png">
     <StackPanel Orientation="Vertical" HorizontalAlignment="Center">
-        <Image Source="/reactors.jpeg" VerticalAlignment="Center" HorizontalAlignment="Center" Width="220"/>
-        <Label Content="Характеристики реакторов" FontSize="10" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-        <Label x:Name="first_Label" FontSize="10" />
-        <Label x:Name="second_Label" FontSize="10" />
+        <Image Source="/reactors.jpeg" VerticalAlignment="Center" HorizontalAlignment="Center" Width="290"/>
+        <Label Content="Характеристики реакторов" FontSize="13" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <Label x:Name="first_Label" FontSize="12" />
+        <Label x:Name="second_Label" FontSize="12" />
     </StackPanel>
 </Window>

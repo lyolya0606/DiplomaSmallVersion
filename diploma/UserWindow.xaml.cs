@@ -296,8 +296,8 @@ namespace Diploma {
             //concChart.AxisY.Add(new Axis { Title = "Концентрация, моль/л", LabelFormatter = FormatFunc, FontSize = 16, MinValue = 0, Foreground = Brushes.Black });
 
             // for not normal
-            concChart.AxisX.Add(new Axis { Title = "Время контакта, с", FontSize = 12, MinValue = 0, Foreground = Brushes.Black });
-            concChart.AxisY.Add(new Axis { Title = "Концентрация, моль/л", LabelFormatter = FormatFunc, FontSize = 12, MinValue = 0, Foreground = Brushes.Black });
+            concChart.AxisX.Add(new Axis { Title = "Время контакта, с", FontSize = 14, MinValue = 0, Foreground = Brushes.Black });
+            concChart.AxisY.Add(new Axis { Title = "Концентрация, моль/л", LabelFormatter = FormatFunc, FontSize = 14, MinValue = 0, Foreground = Brushes.Black });
 
             PointLabel = chartPoint => $"{"Время контакта"}: {Math.Round(chartPoint.X, 4)}, {"Концентрация"}: {Math.Round(chartPoint.Y, 6)}";
             List<LineSeries> lines = new();
@@ -466,8 +466,8 @@ namespace Diploma {
                 //concChart.AxisY.Add(new Axis { Title = "Концентрация, моль/л", LabelFormatter = FormatFunc, FontSize = 16, MinValue = 0, Foreground = Brushes.Black });
 
                 // for not normal!!!!
-                concChart.AxisX.Add(new Axis { Title = "Время контакта, с", LabelFormatter = FormatFuncX, FontSize = 12, MinValue = 0, Foreground = Brushes.Black });
-                concChart.AxisY.Add(new Axis { Title = "Концентрация, моль/л", LabelFormatter = FormatFunc, FontSize = 12, MinValue = 0, Foreground = Brushes.Black });
+                concChart.AxisX.Add(new Axis { Title = "Время контакта, с", LabelFormatter = FormatFuncX, FontSize = 14, MinValue = 0, Foreground = Brushes.Black });
+                concChart.AxisY.Add(new Axis { Title = "Концентрация, моль/л", LabelFormatter = FormatFunc, FontSize = 14, MinValue = 0, Foreground = Brushes.Black });
 
 
                 concChart.DataContext = this;

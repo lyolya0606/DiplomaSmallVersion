@@ -13,7 +13,7 @@
     <StackPanel Orientation="Vertical" Margin="0, 0, 0, 0">
 
         <StackPanel>
-            <Button Content="Выйти" Background="White"  BorderBrush="White" Click="back_ButtonClick" FontWeight="Bold" FontSize="7" HorizontalAlignment="Left" />
+            <Button Content="Выйти" Background="White"  BorderBrush="White" Click="back_ButtonClick" FontWeight="Bold" FontSize="10" HorizontalAlignment="Left" />
         </StackPanel>
         <!--<Button Content="Выйти" Height="27" Width="53" Background="White" BorderBrush="White" Click="Button_Click" FontWeight="Bold"/>-->
         <TabControl Margin="0, 0, 0, 0"  SelectionChanged="TabControl_SelectionChanged" Height="710">
@@ -32,8 +32,8 @@
                         </StackPanel>-->
 
                         <StackPanel Orientation="Horizontal" Margin="0, 0, 0, 0" Width="190">
-                            <Label Content="Марка:" FontSize="10" FontWeight="Bold"/>
-                            <ComboBox x:Name="marks_ComboBox" Margin="5,0,0,0" VerticalAlignment="Center" Width="130" Height="20" VerticalContentAlignment="Center" FontSize="10" Background="White" BorderBrush="#FF030000" HorizontalAlignment="Center" SelectionChanged="marks_ComboBox_SelectionChanged"/>
+                            <Label Content="Марка:" FontSize="12" FontWeight="Bold"/>
+                            <ComboBox x:Name="marks_ComboBox" Margin="5,0,0,0" VerticalAlignment="Center" Width="130" Height="20" VerticalContentAlignment="Center" FontSize="12" Background="White" BorderBrush="#FF030000" HorizontalAlignment="Center" SelectionChanged="marks_ComboBox_SelectionChanged"/>
                         </StackPanel>
 
                         <StackPanel Orientation="Horizontal" Margin="-5, -5, 0, 0" Width="401" HorizontalAlignment="Left">
@@ -61,7 +61,7 @@
 
                         <StackPanel Orientation="Vertical" Margin="10, -5, 10, 0">
                             <Label Content="Технологическая схема" Height="25" FontSize="11" Width="150" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                            <Image x:Name="scheme_image" Width="950" Height="375" MouseDown="scheme_image_MouseDown" />
+                            <Image x:Name="scheme_image" Width="950" Height="370" MouseDown="scheme_image_MouseDown" />
                         </StackPanel>
                         <StackPanel  Orientation="Horizontal" Margin="-5, 0, 0, 0">
                             <StackPanel Orientation="Horizontal">
@@ -99,7 +99,7 @@
 
                 <TabItem.Content>
                     <StackPanel Orientation="Horizontal" Height="710">
-                        <StackPanel Orientation="Vertical" Margin="1, -10, 0, 0" Width="270" Height="660">
+                        <StackPanel Orientation="Vertical" Margin="1, -30, 0, 0" Width="270" Height="660">
                             <Button Margin="0, 5, 0, 0" x:Name="calculateButton" Background="#FFC5FCDE" HorizontalAlignment="Center" FontSize="11" Height="20" Width="69" FontWeight="Bold" Content="Рассчитать" VerticalAlignment="Center" Click="calculateButton_Click"/>
                             <ProgressBar x:Name="progressBar" Height="7" Width="69" Background="White" Margin="0, 2, 0, 0"/>
 
@@ -108,12 +108,12 @@
                             </StackPanel>
 
                             <StackPanel Margin="0, 15, 0, 0" Orientation="Horizontal" HorizontalAlignment="Center">
-                                <Label FontSize="11" FontWeight="Bold" VerticalContentAlignment="Center" Content="Температура, °C"  Height="23" Width="108" HorizontalAlignment="Left"/>
-                                <TextBox x:Name="temperatureTextBox" PreviewTextInput="NumberValidationTextBox" VerticalContentAlignment="Center" FontSize="11" Width="50" Height="23" Margin="0, 0, 0, 0" BorderBrush="Black" Text="400" TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                <Label FontSize="12" FontWeight="Bold" VerticalContentAlignment="Center" Content="Температура, °C"  Height="23" HorizontalAlignment="Left"/>
+                                <TextBox x:Name="temperatureTextBox" PreviewTextInput="NumberValidationTextBox" VerticalContentAlignment="Center" FontSize="12" Width="50" Height="23" Margin="0, 0, 0, 0" BorderBrush="Black" Text="400" TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                             </StackPanel>
                         </StackPanel>
 
-                        <StackPanel Orientation="Vertical" Margin="0, -10, 0, 0" Width="735" Height="670">
+                        <StackPanel Orientation="Vertical" Margin="0, -30, 0, 0" Width="735" Height="670">
                             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
                                 <Button Margin="0, 10, 15, 0" x:Name="reactorButton" Background="White" FontSize="11" Height="22" Width="172" FontWeight="Bold" Content="Характеристики реакторов" Click="reactorButton_Click"/>
                                 <Button Margin="0, 10, 15, 0" x:Name="kineticsButton" Background="White" FontSize="11" Height="22" Width="159" FontWeight="Bold" Content="Кинетические параметры" Click="kineticsButton_Click"/>
@@ -127,13 +127,13 @@
 
                             <StackPanel Margin="0, 15, 0, 0" Orientation="Horizontal" HorizontalAlignment="Center">
                                 <StackPanel Orientation="Horizontal">
-                                    <Label FontSize="11" FontWeight="Bold" VerticalContentAlignment="Center" Content="Время контакта, с" Height="23" Width="115" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                                    <TextBox x:Name="timeTextBox" PreviewTextInput="NumberValidationTextBox" VerticalContentAlignment="Center" Height="23" FontSize="11" Width="50" Margin="0, 0, 0, 0" HorizontalAlignment="Left" VerticalAlignment="Center" BorderBrush="Black" Text="10" TextAlignment="Center"/>
+                                    <Label FontSize="12" FontWeight="Bold" VerticalContentAlignment="Center" Content="Время контакта, с" Height="23" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                    <TextBox x:Name="timeTextBox" PreviewTextInput="NumberValidationTextBox" VerticalContentAlignment="Center" Height="23" FontSize="12" Width="50" Margin="0, 0, 0, 0" HorizontalAlignment="Left" VerticalAlignment="Center" BorderBrush="Black" Text="10" TextAlignment="Center"/>
                                 </StackPanel>
 
                                 <StackPanel Margin="60, 0, 0, 0" Orientation="Horizontal">
-                                    <Label FontSize="11" FontWeight="Bold" VerticalContentAlignment="Center" Content="Конечная концентрация целевого продукта, моль/л: " Height="23" Width="310"/>
-                                    <Label x:Name="finishConcLabel" FontSize="11" FontWeight="Bold" VerticalContentAlignment="Center" Content="-" Height="23" Width="60" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                    <Label FontSize="12" FontWeight="Bold" VerticalContentAlignment="Center" Content="Конечная концентрация целевого продукта, моль/л: " Height="23"/>
+                                    <Label x:Name="finishConcLabel" FontSize="12" FontWeight="Bold" VerticalContentAlignment="Center" Content="-" Height="23" Width="60" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                                 </StackPanel>
                             </StackPanel>
                         </StackPanel>
